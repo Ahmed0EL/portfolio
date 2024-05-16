@@ -38,7 +38,7 @@ const Notfound = () => {
 								not found on this server.
 							</div>
 							<a href="/" className="not-found-link">
-								Go back to the home page
+								Go back to the home 
 							</a>
 						</div>
 					</div>
