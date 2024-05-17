@@ -171,15 +171,15 @@ const Homepage = () => {
 											date={article().date}
 											title={article().title}
 											description={article().description}
-											link={"/article/" + (index + 1)}
+											link={article().link}
 										/>
 									</div>
 								))}
 							</div>
 
-							{/* <div className="homepage-works">
+							<div className="homepage-works">
 								<Works />
-							</div> */}
+							</div>
 						</div>
 
 						<div className="page-footer">
