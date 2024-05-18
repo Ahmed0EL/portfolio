@@ -22,11 +22,15 @@ const Article = (props) => {
 					</div>
 					<div className="homepage-article-link">
 						<Link to={link}>
-							Read article{" "}
-							<FontAwesomeIcon
-								style={{ fontSize: "10px" }}
-								icon={faChevronRight}
-							/>
+						{
+							link == null ? null : <div className="article-link">
+								Read Certificates{" "}
+								<FontAwesomeIcon
+									style={{ fontSize: "10px" }}
+									icon={faChevronRight}
+								/>
+							</div>
+						}
 						</Link>
 					</div>
 				</div>

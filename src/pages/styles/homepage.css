@@ -41,6 +41,7 @@
 	height: 370px;
 }
 
+
 .homepage-image-wrapper {
 	overflow: hidden;
 	border-radius: 10%;
@@ -49,6 +50,7 @@
 
 .homepage-image-wrapper img {
 	width: 100%;
+	
 }
 
 .homepage-socials {

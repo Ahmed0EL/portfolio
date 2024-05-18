@@ -8,7 +8,6 @@ import Article from "../components/articles/article";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
 
 import "./styles/articles.css";
 
@@ -22,7 +21,7 @@ const Articles = () => {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Articles | ${INFO.main.title}`}</title>
+				<title>{`Certificates | ${INFO.main.title}`}</title>
 				<meta name="description" content={currentSEO.description} />
 				<meta
 					name="keywords"
@@ -50,17 +49,18 @@ const Articles = () => {
 
 						<div className="articles-container">
 							<div className="articles-wrapper">
-								{myArticles.map((article, index) => (
+								
+								{INFO.Certificates.map((item, index) => (
 									<div
 										className="articles-article"
-										key={(index + 1).toString()}
+										key={index}
 									>
 										<Article
 											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={article().link}
+											date={item.date}
+											title={item.title}
+											description={item.description}
+											link={item.link}
 										/>
 									</div>
 								))}

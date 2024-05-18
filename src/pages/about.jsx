@@ -48,6 +48,20 @@ const About = () => {
 								<div className="subtitle about-subtitle">
 									{INFO.about.description}
 								</div>
+								<h1>My tools</h1>
+								<div className="tools">
+
+									{INFO.icons.map((icon, index) => (
+										<img
+											key={index}
+											className="icon-imag"
+											src={icon.src}
+											alt={icon.alt}
+										/>
+									))}
+
+
+								</div>
 							</div>
 
 							<div className="about-left-side">
@@ -65,6 +79,7 @@ const About = () => {
 									<Socials />
 								</div>
 							</div>
+
 						</div>
 						<div className="about-socials-mobile">
 							<Socials />

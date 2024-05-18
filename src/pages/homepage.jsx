@@ -18,7 +18,6 @@ import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
 
 import "./styles/homepage.css";
 
@@ -161,17 +160,17 @@ const Homepage = () => {
 
 						<div className="homepage-after-title">
 							<div className="homepage-articles">
-								{myArticles.map((article, index) => (
+								{INFO.Certificates.map((item, index) => (
 									<div
 										className="homepage-article"
-										key={(index + 1).toString()}
+										key={index}
 									>
 										<Article
 											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={article().link}
+											date={item.date}
+											title={item.title}
+											description={item.description}
+											link={item.link}
 										/>
 									</div>
 								))}
