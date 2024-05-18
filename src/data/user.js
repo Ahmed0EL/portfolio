@@ -87,7 +87,7 @@ const INFO = {
 		{ src: "../icon/Blender.png", alt: "Blender icon" },
 		{ src: "../icon/Azure.png", alt: "Azure icon" },
 		{ src: "../icon/Figma.png", alt: "Figma icon" },
-		{ src: "../icon/adobe-illustrator.png", alt: "Adobe Illustrator icon" },
+		{ src: "../icon/illustrator.png", alt: "Adobe Illustrator icon" },
 		{ src: "../icon/Canva.png", alt: "Canva icon" },
 		{ src: "../icon/Jira.png", alt: "Jira icon" },
 		{ src: "../icon/Node.js.png", alt: "Node.js icon" },
