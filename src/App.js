@@ -12,6 +12,7 @@ import Notfound from "./pages/404";
 import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 function App() {
 	useEffect(() => {
 		if (TRACKING_ID !== "") {
@@ -30,8 +31,8 @@ function App() {
 				<Route path="*" element={<Notfound />} />
 			</Routes>
 			<Analytics />
+			<SpeedInsights/>
 		</div>
 	);
 }
-
 export default App;
